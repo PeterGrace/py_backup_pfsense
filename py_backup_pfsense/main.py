@@ -52,7 +52,7 @@ def commit_config_to_git(filepath):
 def main(username,password,router_ssl,filepath):
     '''Skeleton App made by pymkcli'''
     create_backup_file(username,password,router_ssl,filepath)
-    commit_config_to_git()
+    commit_config_to_git(filepath)
 
 if __name__ == '__main__':
     main()
