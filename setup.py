@@ -9,6 +9,8 @@ setup(
         'click',
         'setuptools-lint',
         'pytest',
+        'requests',
+        'sh',
     ],
     entry_points='''
         [console_scripts]
