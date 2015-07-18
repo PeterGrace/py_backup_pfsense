@@ -7,8 +7,6 @@ setup(
     include_package_data=True,
     install_requires=[
         'click',
-        'setuptools-lint',
-        'pytest',
         'requests',
         'sh',
     ],
