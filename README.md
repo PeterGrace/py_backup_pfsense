@@ -2,7 +2,7 @@ py_backup_pfsense
 ===============
 This program will login to your pfSense router and download the latest backup of your configuration file.  It then will attempt to git commit/git push that file, should your directory where the file is saved be a git repository.
 
-This program is an adaptation of Nextraztus''s most excellent port of my original shell script to do pfSense backups from the command line.  As of the latest pfSense, they now use CSRF validation which meant that the earlier method of saving cookies via curl would not work properly.  This script properly works around the issue.
+This program is an adaptation of Nextraztus's most excellent port of my original shell script to do pfSense backups from the command line.  As of the latest pfSense, they now use CSRF validation which meant that the earlier method of saving cookies via curl would not work properly.  This script properly works around the issue.
 
 Syntax
 ======
