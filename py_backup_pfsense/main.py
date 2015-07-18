@@ -4,6 +4,7 @@ import requests
 import re
 import sys
 import sh
+import os
 
 def create_backup_file(username,password,router_ssl,filepath):
     retxt = 'var csrfMagicToken = "(.+?)";var csrfMagicName = "(.+?)";'
