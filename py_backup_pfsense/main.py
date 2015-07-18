@@ -38,8 +38,8 @@ def create_backup_file(username,password,router_ssl,filepath):
     f.write(r.text)
     f.close()
 
-def commit_config_to_git():
-    git = sh.git.bake(_cwd=name)
+def commit_config_to_git(filepath):
+    git = sh.git.bake(_cwd=os.path.split(filepath)[0])
     git.commit('-am', 'latest backup by py_backup_pfsense')
     git.push()
     
